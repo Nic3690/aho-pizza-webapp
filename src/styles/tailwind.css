@@ -1,0 +1,30 @@
+/* src/styles/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .menu-item {
+    @apply bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-amber-200;
+  }
+  
+  .menu-item-title {
+    @apply text-xl font-bold text-red-800;
+  }
+  
+  .menu-item-price {
+    @apply font-bold text-red-700;
+  }
+  
+  .menu-item-description {
+    @apply text-gray-600 mt-2 min-h-12;
+  }
+  
+  .btn-primary {
+    @apply px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition-colors;
+  }
+}
