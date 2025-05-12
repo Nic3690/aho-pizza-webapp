@@ -40,7 +40,7 @@ export const categories = [
       { id: 22, name: 'Colosseo', description: 'Pomodoro, Peperoni, Salsiccia, Provola', price: '8,20€', image: '/api/placeholder/300/200' }
     ],
     'fritte': [
-      { id: 23, name: 'Suppli al Telefono', description: 'Ripieno produzione con Riso e pomodoro all'arrabbiata, Mozzarella', price: '1,50€', image: '/api/placeholder/300/200' },
+      { id: 23, name: 'Suppli al Telefono', description: 'Ripieno produzione con Riso e pomodoro all arrabbiata, Mozzarella', price: '1,50€', image: '/api/placeholder/300/200' },
       { id: 24, name: 'Crocchetta Di Patate', description: 'Di ns produzione con Patate, Pepe, Parmigiano, Noce Moscata', price: '1,30€', image: '/api/placeholder/300/200' },
       { id: 25, name: 'Crocchetta Special', description: 'Di ns prod. con Patate, Speck, Provola, Parmigiano, Noce moscata, Pepe', price: '1,80€', image: '/api/placeholder/300/200' },
       { id: 26, name: 'Arancino Funghi e Provola', description: 'Di nostra produzione con Champignon e Piselli', price: '2,00€', image: '/api/placeholder/300/200' },
@@ -49,8 +49,8 @@ export const categories = [
     ],
     'bruschette': [
       { id: 29, name: 'Bruschetta con Mozzarella e Pomodorini', description: 'Mozzarella, Pomodorini a scelta', price: '4,50€', image: '/api/placeholder/300/200' },
-      { id: 30, name: 'Bruschetta con Crema d'Olive', description: 'Bruschetta con Crema', price: '4,60€', image: '/api/placeholder/300/200' },
-      { id: 31, name: 'Bruschetta con 'Nduja', description: ''Nduja di Spilinga', price: '6,10€', image: '/api/placeholder/300/200' },
+      { id: 30, name: 'Bruschetta con Crema di Olive', description: 'Bruschetta con Crema', price: '4,60€', image: '/api/placeholder/300/200' },
+      { id: 31, name: 'Bruschetta con Nduja', description: 'Nduja di Spilinga', price: '6,10€', image: '/api/placeholder/300/200' },
       { id: 32, name: 'Bruschetta con Crema di Tartufo', description: 'Crema di Tartufo', price: '6,20€', image: '/api/placeholder/300/200' }
     ],
     'insalate': [

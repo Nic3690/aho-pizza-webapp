@@ -1,21 +1,43 @@
 // src/pages/HomePage.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/layout/Header';
 import Navigation from '../components/layout/Navigation';
 import Footer from '../components/layout/Footer';
 import MenuCategory from '../components/menu/MenuCategory';
 import MenuList from '../components/menu/MenuList';
+import PromoBanner from '../components/ui/PromoBanner';
 import { categories } from '../data/menuData';
 
 const HomePage = () => {
   const [activeCategory, setActiveCategory] = useState('pizze-rosse');
+  const [showScrollTop, setShowScrollTop] = useState(false);
+  
+  // Gestione dello scroll per tornare in cima
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.pageYOffset > 300);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
   
   const handleCategoryChange = (categoryId) => {
     setActiveCategory(categoryId);
+    // Scroll alla cima del menu quando si cambia categoria
+    document.getElementById('menu-container').scrollIntoView({ behavior: 'smooth' });
   };
   
   return (
-    <div className="min-h-screen bg-amber-50">
+    <div className="min-h-screen bg-amber-50 flex flex-col">
+      <PromoBanner />
       <Header />
       <Navigation activeCategory={activeCategory} onCategoryChange={handleCategoryChange} />
       
@@ -28,7 +50,7 @@ const HomePage = () => {
         </div>
       )}
       
-      <main className="container mx-auto px-4 py-8">
+      <main id="menu-container" className="container mx-auto px-4 py-8 flex-grow">
         <MenuCategory activeCategory={activeCategory} />
         <MenuList activeCategory={activeCategory} />
         
@@ -48,6 +70,19 @@ const HomePage = () => {
           </div>
         )}
       </main>
+      
+      {/* Pulsante per tornare in cima */}
+      {showScrollTop && (
+        <button 
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 bg-red-700 text-white p-3 rounded-full shadow-lg hover:bg-red-800 transition-colors z-40"
+          aria-label="Torna in cima"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+          </svg>
+        </button>
+      )}
       
       <Footer />
     </div>
