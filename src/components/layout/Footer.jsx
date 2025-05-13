@@ -39,8 +39,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-red-800 text-center text-sm text-red-200">
-          <p className="text-amber-200 text-lg">Le vere Pizza e Pinsa romana da asporto e a domicilio</p>
-          <p className="text-amber-200 italic text-lg mt-2">dal 1996</p>
+          {/* Aggiornati i colori da amber-200 a aho-yellow */}
+          <p className="text-aho-yellow text-lg">Le vere Pizza e Pinsa romana da asporto e a domicilio</p>
+          <p className="text-aho-yellow italic text-lg mt-2">dal 1996</p>
           <p className="mt-4">© 2025 AHO PIZZA. Tutti i diritti riservati. Valido da Aprile 2025.</p>
         </div>
       </div>

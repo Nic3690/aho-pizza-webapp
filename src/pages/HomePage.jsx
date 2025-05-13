@@ -31,8 +31,7 @@ const HomePage = () => {
   
   const handleCategoryChange = (categoryId) => {
     setActiveCategory(categoryId);
-    // Scroll alla cima del menu quando si cambia categoria
-    document.getElementById('menu-container').scrollIntoView({ behavior: 'smooth' });
+    // Rimuoviamo lo scrolling automatico che causava il problema
   };
   
   return (

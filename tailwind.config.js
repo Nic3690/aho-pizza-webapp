@@ -24,10 +24,14 @@ export default {
 			300: '#FCD34D',
 			500: '#F59E0B',
 		  },
+		  // Aggiunto il nuovo colore giallo richiesto
+		  'aho-yellow': '#fcc82f',
 		},
 		fontFamily: {
 		  sans: ['Montserrat', 'sans-serif'],
 		  display: ['Playfair Display', 'serif'],
+		  // Aggiunto il font Romana
+		  romana: ['Romana', 'Playfair Display', 'serif'], // Fallback a Playfair Display
 		},
 		animation: {
 		  'bounce-once': 'bounce 1s ease-in-out 1',
