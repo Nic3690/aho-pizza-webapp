@@ -35,7 +35,7 @@ const AllergenInfo = ({ className = '' }) => {
       </button>
 
       {isOpen && (
-        <div className="absolute z-50 right-0 mt-2 p-4 bg-white rounded-lg shadow-lg w-80 text-sm">
+        <div className="absolute z-50 sm:right-0 mt-2 p-4 bg-white rounded-lg shadow-lg w-80 text-sm">
           <h4 className="font-bold mb-2 text-red-800">Legenda allergeni</h4>
           <div className="grid grid-cols-2 gap-2">
             {Object.entries(allergensList).map(([code, name]) => (
