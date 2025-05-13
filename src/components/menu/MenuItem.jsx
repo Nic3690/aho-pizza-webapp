@@ -42,7 +42,7 @@ const MenuItem = ({ item }) => {
                   className="w-7 h-7 sm:w-6 sm:h-6 rounded-full bg-aho-yellow flex items-center justify-center"
                   title={allergensList[allergen] || allergen}
                 >
-                  <span className="text-sm sm:text-xs font-bold text-white">{allergen}</span>
+                  <span className="text-sm sm:text-xs font-bold text-black">{allergen}</span>
                 </div>
               ))}
             </div>
