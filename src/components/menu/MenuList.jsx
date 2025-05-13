@@ -8,7 +8,7 @@ const MenuList = ({ activeCategory }) => {
   if (activeCategory === 'menu-fisso') {
     return (
       <div>
-        <div className="flex justify-end mb-4">
+        <div className="flex justify-end sm:justify-end mb-4">
           <AllergenInfo />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -50,7 +50,7 @@ const MenuList = ({ activeCategory }) => {
 
   return (
     <div>
-      <div className="flex justify-end mb-4">
+      <div className="flex justify-start sm:justify-end mb-4">
         <AllergenInfo />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

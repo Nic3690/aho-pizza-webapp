@@ -23,13 +23,13 @@ const MenuItem = ({ item }) => {
     <div className="bg-white rounded-lg overflow-hidden shadow-md border border-aho-yellow">
       <div className="p-3 sm:p-4">
         <div className="flex justify-between items-start">
-          {/* Font ridotto SOLO su mobile */}
-          <h3 className="text-base sm:text-xl font-bold text-red-800">{item.name}</h3>
-          <span className="font-bold text-red-700 text-sm sm:text-base">{item.price}</span>
+          {/* Font aumentato su mobile */}
+          <h3 className="text-lg sm:text-xl font-bold text-red-800">{item.name}</h3>
+          <span className="font-bold text-red-700 text-base sm:text-base">{item.price}</span>
         </div>
         
-        {/* Font ridotto SOLO su mobile */}
-        <p className="text-gray-600 mt-1 sm:mt-2 min-h-10 sm:min-h-12 text-xs sm:text-base">
+        {/* Font aumentato su mobile */}
+        <p className="text-gray-600 mt-1 sm:mt-2 min-h-10 sm:min-h-12 text-sm sm:text-base">
           {item.description}
         </p>
         
@@ -39,7 +39,7 @@ const MenuItem = ({ item }) => {
               {item.allergens.map((allergen) => (
                 <div 
                   key={allergen} 
-                  className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-red-700 flex items-center justify-center"
+                  className="w-6 h-6 sm:w-6 sm:h-6 rounded-full bg-red-700 flex items-center justify-center"
                   title={allergensList[allergen] || allergen}
                 >
                   <span className="text-xs font-bold text-white">{allergen}</span>

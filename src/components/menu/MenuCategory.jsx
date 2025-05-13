@@ -4,7 +4,7 @@ import { categories } from '../../data/menuData';
 
 const MenuCategory = ({ activeCategory }) => {
   return (
-    <div className="w-full text-left md:text-center mb-2 sm:mb-4 md:mb-6">
+    <div className="w-full text-center md:text-center mb-2 sm:mb-4 md:mb-6">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-aho-yellow mt-2 sm:mt-4 md:mt-6 px-4 md:px-0">
         {categories.find(cat => cat.id === activeCategory)?.name}
       </h2>

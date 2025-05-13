@@ -10,14 +10,14 @@ const Header = () => {
           <img 
             src="/images/logo_aho_pizza.png" 
             alt="AHO PIZZA Logo" 
-            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16" // Riduzione dimensioni logo
+            className="w-16 h-16 sm:w-16 sm:h-16 md:w-18 md:h-18" // Riduzione dimensioni logo
           />
           <div className="flex flex-col">
             {/* Aumentato il font-size base per mobile */}
-            <h1 className="font-chunk text-2xl sm:text-2xl md:text-3xl leading-none">Ahò Pizza</h1>
+            <h1 className="font-chunk text-3xl sm:text-2xl md:text-3xl leading-none">Ahò Pizza</h1>
             
             {/* Aumentato lo spazio e dimensione font per mobile */}
-            <span className="font-semibold text-sm sm:text-sm md:text-base text-aho-yellow -mt-1 sm:-mt-2">Torre Angela</span>
+            <span className="font-semibold text-m sm:text-sm md:text-base text-aho-yellow -mt-1 sm:-mt-2">Torre Angela</span>
           </div>
         </Link>
         
