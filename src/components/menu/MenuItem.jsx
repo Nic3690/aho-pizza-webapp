@@ -39,7 +39,7 @@ const MenuItem = ({ item }) => {
               {item.allergens.map((allergen) => (
                 <div 
                   key={allergen} 
-                  className="w-7 h-7 sm:w-6 sm:h-6 rounded-full bg-red-700 flex items-center justify-center"
+                  className="w-7 h-7 sm:w-6 sm:h-6 rounded-full bg-aho-yellow flex items-center justify-center"
                   title={allergensList[allergen] || allergen}
                 >
                   <span className="text-sm sm:text-xs font-bold text-white">{allergen}</span>
