@@ -3,7 +3,7 @@ import React from 'react';
 
 const MenuItem = ({ item }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200">
+    <div className="bg-white rounded-lg overflow-hidden shadow-md border border-aho-yellow">
       <div className="p-4">
         <div className="flex justify-between items-start">
           <h3 className="text-xl font-bold text-red-800">{item.name}</h3>

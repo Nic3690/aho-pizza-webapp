@@ -10,10 +10,10 @@ const MenuList = ({ activeCategory }) => {
         {menuItems[activeCategory].map((item) => (
           <div key={item.id} className="bg-gradient-to-b from-red-700 to-red-900 rounded-lg overflow-hidden shadow-lg text-white">
             <div className="p-6">
-              <h3 className="text-2xl font-bold text-amber-200 mb-4">{item.name}</h3>
+              <h3 className="text-2xl font-bold text-aho-yellow mb-4">{item.name}</h3>
               <p className="text-white mb-6">{item.description}</p>
               <div className="text-right">
-                <span className="text-2xl font-bold text-amber-200">{item.price}</span>
+                <span className="text-2xl font-bold text-aho-yellow">{item.price}</span>
               </div>
             </div>
           </div>

@@ -5,14 +5,12 @@ import HomePage from './pages/HomePage';
 
 const App = () => {
   return (
-    <CartProvider>
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/cart" element={<CartPage />} />
-        </Routes>
-      </Router>
-    </CartProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* Il percorso /cart è stato rimosso */}
+      </Routes>
+    </Router>
   );
 };
 

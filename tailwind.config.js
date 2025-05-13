@@ -28,11 +28,11 @@ export default {
 		  'aho-yellow': '#fcc82f',
 		},
 		fontFamily: {
-		  sans: ['Montserrat', 'sans-serif'],
-		  display: ['Playfair Display', 'serif'],
-		  // Aggiunto il font Romana
-		  romana: ['Romana', 'Playfair Display', 'serif'], // Fallback a Playfair Display
-		},
+			sans: ['Montserrat', 'sans-serif'],
+			display: ['Playfair Display', 'serif'],
+			romana: ['Romana', 'Playfair Display', 'serif'],
+			chunk: ['ChunkFive', 'serif'], // Aggiungi questa riga
+		  },
 		animation: {
 		  'bounce-once': 'bounce 1s ease-in-out 1',
 		  'fade-in': 'fadeIn 0.5s ease-in-out',

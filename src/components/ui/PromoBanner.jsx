@@ -7,13 +7,13 @@ const PromoBanner = () => {
   if (!isVisible) return null;
   
   return (
-    <div className="bg-gradient-to-r from-red-700 to-red-900 text-white py-3 relative">
+    <div className="bg-black text-white py-3 relative">
       <div className="container mx-auto px-4 text-center">
         <p className="font-medium">
           {/* Cambiato il colore da amber-200 a aho-yellow */}
           <span className="text-aho-yellow font-bold">OFFERTA SPECIALE!</span> Ordina online e ricevi uno sconto del 10% sul tuo primo ordine. Usa il codice: 
           {/* Cambiato il colore dello sfondo da amber-200 a aho-yellow */}
-          <span className="bg-aho-yellow text-red-800 px-2 py-1 rounded-lg font-bold">AHOWEB10</span>
+          <span className="text-aho-yellow px-1 py-0.2 rounded-lg font-bold">AHOWEB10</span>
         </p>
       </div>
       <button 

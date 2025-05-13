@@ -31,38 +31,37 @@ const HomePage = () => {
   
   const handleCategoryChange = (categoryId) => {
     setActiveCategory(categoryId);
-    // Rimuoviamo lo scrolling automatico che causava il problema
   };
-  
+
   return (
-    <div className="min-h-screen bg-amber-50 flex flex-col">
+    <div 
+      className="min-h-screen flex flex-col"
+      style={{ 
+        backgroundImage: "url('/images/sfondo_aho.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}
+    >
       <PromoBanner />
       <Header />
       <Navigation activeCategory={activeCategory} onCategoryChange={handleCategoryChange} />
-      
-      {activeCategory === 'menu-fisso' && (
-        <div className="bg-amber-100 py-4">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-red-800 mb-1">Menù a Prezzo Fisso</h2>
-            <p className="text-center text-red-700 italic">Dal Lunedì al Venerdì - festivi esclusi - prova i nostri</p>
-          </div>
-        </div>
-      )}
-      
+
       <main id="menu-container" className="container mx-auto px-4 py-8 flex-grow">
         <MenuCategory activeCategory={activeCategory} />
+              
         <MenuList activeCategory={activeCategory} />
         
         {activeCategory === 'menu-fisso' && (
-          <div className="mt-10 bg-amber-50 p-6 rounded-lg border border-amber-200">
-            <h3 className="text-xl font-bold text-red-800 mb-4">Allergeni</h3>
+          <div className="mt-10 bg-white bg-opacity-80 text-black p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4">Allergeni</h3>
             <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-4">
               {['Glutine', 'Arachidi', 'Fragola', 'Sedano', 'Senape', 'Molluschi', 'Soia', 'Uova', 'Latte', 'Sesamo', 'Pesce', 'Crostacei', 'Solfiti', 'Lupini'].map((allergene) => (
                 <div key={allergene} className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center mb-2">
+                  <div className="w-12 h-12 rounded-full bg-aho-yellow flex items-center justify-center mb-2">
                     <span className="text-xs text-red-800">{allergene.substring(0, 1)}</span>
                   </div>
-                  <span className="text-xs text-center text-red-800">{allergene}</span>
+                  <span className="text-xs text-center">{allergene}</span>
                 </div>
               ))}
             </div>
