@@ -6,6 +6,7 @@ import Footer from '../components/layout/Footer';
 import MenuCategory from '../components/menu/MenuCategory';
 import MenuList from '../components/menu/MenuList';
 import PromoBanner from '../components/ui/PromoBanner';
+import AllergenKey from '../components/ui/AllergenKey';
 import { categories } from '../data/menuData';
 
 const HomePage = () => {
@@ -52,21 +53,8 @@ const HomePage = () => {
               
         <MenuList activeCategory={activeCategory} />
         
-        {activeCategory === 'menu-fisso' && (
-          <div className="mt-10 bg-white bg-opacity-80 text-black p-6 rounded-lg">
-            <h3 className="text-xl font-bold mb-4">Allergeni</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-4">
-              {['Glutine', 'Arachidi', 'Fragola', 'Sedano', 'Senape', 'Molluschi', 'Soia', 'Uova', 'Latte', 'Sesamo', 'Pesce', 'Crostacei', 'Solfiti', 'Lupini'].map((allergene) => (
-                <div key={allergene} className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-aho-yellow flex items-center justify-center mb-2">
-                    <span className="text-xs text-red-800">{allergene.substring(0, 1)}</span>
-                  </div>
-                  <span className="text-xs text-center">{allergene}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+        {/* Display the allergen key at the bottom of the page regardless of category */}
+        <AllergenKey />
       </main>
       
       {/* Pulsante per tornare in cima */}
