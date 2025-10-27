@@ -6,7 +6,7 @@ export const categories = [
   { id: 'buongustaio', name: 'Buongustaio' },
   { id: 'fredde', name: 'Fredde' },
   { id: 'calzoni', name: 'Calzoni' },
-  { id: 'bruscotte', name: 'bruscotte' },
+  { id: 'bruscotte', name: 'Bruscotte' },
   { id: 'insalate', name: 'Insalate' },
   { id: 'bevande', name: 'Bevande' },
   { id: 'dolci', name: 'Dolci' },
