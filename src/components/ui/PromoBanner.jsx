@@ -11,8 +11,8 @@ const PromoBanner = () => {
       <div className="container mx-auto px-4 text-center">
         <p className="text-xs sm:text-sm md:text-base font-medium">
           {/* Testo più piccolo su mobile, più grande su tablet/desktop */}
-          <span className="text-aho-yellow font-bold">OFFERTA SPECIALE!</span> Ordina online e ricevi uno sconto del 10% sul tuo primo ordine. Usa il codice: 
-          <span className="text-aho-yellow px-1 py-0.2 rounded-lg font-bold">AHOWEB10</span>
+          <span className="text-aho-yellow font-bold">A solo 1 euro</span> in più, puoi gustare l'autentica
+          <span className="text-aho-yellow px-1 py-0.2 rounded-lg font-bold">Pinsa Romana</span>
         </p>
       </div>
       <button 

@@ -39,6 +39,7 @@ const HomePage = () => {
     <>
       <div className="app-background"></div>
       <div className="app-container">
+        <PromoBanner />
         <Header />
         <Navigation activeCategory={activeCategory} onCategoryChange={handleCategoryChange} />
 

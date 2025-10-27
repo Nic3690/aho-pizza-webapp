@@ -54,7 +54,7 @@ const Footer = () => {
         <div className="mt-4 pt-4 md:mt-8 md:pt-8 border-t border-red-800 text-center text-sm text-red-200">
           <p className="text-aho-yellow text-base md:text-lg">Le vere Pizza e Pinsa romana da asporto e a domicilio</p>
           <p className="text-aho-yellow italic text-base md:text-lg mt-1 md:mt-2">dal 1996</p>
-          <p className="mt-2 md:mt-4 text-xs md:text-sm">© 2025 AHO PIZZA. Tutti i diritti riservati. Valido da Aprile 2025.</p>
+          <p className="mt-2 md:mt-4 text-xs md:text-sm">© 2025 AHO PIZZA. Tutti i diritti riservati. Valido da Novembre 2025.</p>
         </div>
       </div>
     </footer>
