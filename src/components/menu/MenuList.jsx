@@ -5,6 +5,15 @@ import AllergenInfo from '../ui/AllergenInfo';
 import { menuItems } from '../../data/menuData';
 
 const MenuList = ({ activeCategory }) => {
+  // Controllo se la categoria esiste
+  if (!menuItems[activeCategory]) {
+    return (
+      <div className="text-center text-white py-8">
+        <p>Categoria non trovata. Seleziona una categoria dal menu.</p>
+      </div>
+    );
+  }
+
   if (activeCategory === 'menu-fisso') {
     return (
       <div>
@@ -54,7 +63,7 @@ const MenuList = ({ activeCategory }) => {
         <AllergenInfo />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {menuItems[activeCategory].map((item) => (
+        {menuItems[activeCategory] && menuItems[activeCategory].map((item) => (
           <MenuItem key={item.id} item={item} />
         ))}
       </div>
