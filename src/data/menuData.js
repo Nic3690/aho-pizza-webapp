@@ -6,7 +6,7 @@ export const categories = [
   { id: 'buongustaio', name: 'Buongustaio' },
   { id: 'fredde', name: 'Fredde' },
   { id: 'calzoni', name: 'Calzoni' },
-  { id: 'bruschette', name: 'Bruschette' },
+  { id: 'bruscotte', name: 'bruscotte' },
   { id: 'insalate', name: 'Insalate' },
   { id: 'bevande', name: 'Bevande' },
   { id: 'dolci', name: 'Dolci' },
@@ -20,14 +20,14 @@ export const menuItems = {
       name: 'Supplì Semplice', 
       description: 'Pomodoro, Mozzarella, Basilico', 
       price: '1,10', 
-      allergens: ['G', 'L'] 
+      allergens: ['G', 'L', 'Se']
     },
     { 
       id: 2, 
       name: 'Supplì al Telefono', 
       description: 'Di nostra produzione con Ragù di manzo, Mozzarella', 
       price: '1,60', 
-      allergens: ['G', 'L'] 
+      allergens: ['G', 'L', 'Se']
     },
     { 
       id: 3, 
@@ -40,13 +40,13 @@ export const menuItems = {
       id: 4, 
       name: 'Crocchetta Special', 
       description: 'Patate, Speck, Provola, Parmigiano, Noce moscata, Pepe', 
-      price: '1,60', 
+      price: '2,00', 
       allergens: ['G', 'L'] 
     },
     { 
       id: 5, 
       name: 'Arancino Siciliano', 
-      description: 'Di nostra produzione con Ragù Siciliano e Piselli, Mozzarella', 
+      description: 'Di nostra produzione con riso allo Zafferano, Ragù di Manzo e Piselli, Mozzarella', 
       price: '3,50', 
       allergens: ['G', 'L'] 
     },
@@ -67,7 +67,7 @@ export const menuItems = {
     { 
       id: 8, 
       name: 'Mini Arancino Carbonara', 
-      description: 'Di nostra produzione con Pecorino, Guanciale, Pepe', 
+      description: 'Di nostra produzione con Uova, Pecorino, Guanciale, Pepe', 
       price: '2,20', 
       allergens: ['G', 'L', 'U'] 
     },
@@ -144,14 +144,14 @@ export const menuItems = {
     { 
       id: 19, 
       name: 'Chele di Granchio', 
-      description: '4 pezzi', 
+      description: '1 pezzo', 
       price: '1,30', 
       allergens: ['G', 'C'] 
     },
     { 
       id: 20, 
       name: 'Anelli di Cipolla', 
-      description: '6 pezzi', 
+      description: '8 pezzi', 
       price: '2,70', 
       allergens: ['G'] 
     },
@@ -273,7 +273,7 @@ export const menuItems = {
       id: 37, 
       name: 'Wurstel', 
       description: 'Pomodoro, Mozzarella, Wurstel', 
-      price: '6,80', 
+      price: '6,90', 
       allergens: ['G', 'L'] 
     },
     { 
@@ -321,13 +321,6 @@ export const menuItems = {
       allergens: ['G', 'L'] 
     },
     { 
-      id: 44, 
-      name: 'Piccantina', 
-      description: 'Mozzarella, Gorgonzola', 
-      price: '6,90', 
-      allergens: ['G', 'L'] 
-    },
-    { 
       id: 45, 
       name: 'Radicchio e Gorgonzola', 
       description: 'Mozzarella, Radicchio, Gorgonzola', 
@@ -336,7 +329,7 @@ export const menuItems = {
     },
     { 
       id: 46, 
-      name: 'Fiori di Zucca', 
+      name: 'Fiori di Zucca e Alici', 
       description: 'Mozzarella, Fiori di Zucca, Alici (Soggetta a stagionalità)', 
       price: '7,80', 
       allergens: ['G', 'L', 'P'] 
@@ -346,13 +339,6 @@ export const menuItems = {
       name: 'Aho Pizza', 
       description: 'Mozzarella, Purè, Cotto/Mortadella/Nduja/Tonno/Salsiccia', 
       price: '8,00', 
-      allergens: ['G', 'L'] 
-    },
-    { 
-      id: 48, 
-      name: 'Messicana', 
-      description: 'Mozzarella, Salsiccia, Fagioli, Peperoncino', 
-      price: '7,30', 
       allergens: ['G', 'L'] 
     },
     { 
@@ -371,7 +357,7 @@ export const menuItems = {
     },
     { 
       id: 51, 
-      name: 'Mozzarella e Ciciarona', 
+      name: 'Broccoletti e Salsiccia', 
       description: 'Mozzarella, Broccoletti, Salsiccia, Peperoncino', 
       price: '8,60', 
       allergens: ['G', 'L'] 
@@ -388,42 +374,42 @@ export const menuItems = {
     { 
       id: 53, 
       name: 'Calabrò', 
-      description: 'Pomo, Mozza, Alici, Olive, Pecorino, Salsa Verde, Peperoncino', 
+      description: 'Pomodoro, Mozzarella, Alici, Olive, Pecorino, Salsa Verde, Peperoncino', 
       price: '7,60', 
       allergens: ['G', 'L', 'P'] 
     },
     { 
       id: 54, 
       name: 'Capricciosa', 
-      description: 'Pomo, Mozza, Funghi, Uova, Olive, Carciofinì, Crudo', 
+      description: 'Pomodoro, Mozzarella, Funghi, Uova, Olive, Carciofinì, Crudo', 
       price: '7,90', 
       allergens: ['G', 'L', 'U'] 
     },
     { 
       id: 55, 
       name: 'Parmigiana', 
-      description: 'Pomo, Mozza, Melanzane, Pecorino/Parmigiano', 
+      description: 'Pomodoro, Mozzarella, Melanzane, Pecorino/Parmigiano', 
       price: '7,70', 
       allergens: ['G', 'L'] 
     },
     { 
       id: 56, 
       name: 'Tonno, Olive, Pomodori Secchi', 
-      description: 'Pomodoro, Mozza, Tonno, Olive, Pomodori Secchi', 
+      description: 'Pomodoro, Mozzarella, Tonno, Olive, Pomodori Secchi', 
       price: '8,50', 
       allergens: ['G', 'L', 'P'] 
     },
     { 
-      id: 57, 
-      name: 'Pescatora', 
+      id: 44, 
+      name: 'Messicana', 
       description: 'Pomodoro, Mozzarella, Salsiccia, Fagioli, Peperoncino', 
       price: '7,80', 
-      allergens: ['G', 'L'] 
+      allergens: ['G', 'L', 'P'] 
     },
     { 
       id: 58, 
       name: "L'inferno", 
-      description: 'Pomo, Mozzarella, \'Nduja di Spilinga, Ventricina', 
+      description: 'Pomodoro, Mozzarella, \'Nduja di Spilinga, Ventricina', 
       price: '8,20', 
       allergens: ['G', 'L'] 
     }
@@ -432,7 +418,7 @@ export const menuItems = {
     { 
       id: 59, 
       name: 'Amatriciana', 
-      description: 'Pomo, Guanciale, Pecorino, Peperoncino', 
+      description: 'Pomodoro, Guanciale, Pecorino, Peperoncino', 
       price: '8,60', 
       allergens: ['G', 'L'] 
     },
@@ -452,7 +438,7 @@ export const menuItems = {
     },
     { 
       id: 62, 
-      name: 'Crudo', 
+      name: 'Valtellina', 
       description: 'Mozzarella, Provola Affumicata, Speck', 
       price: '8,50', 
       allergens: ['G', 'L'] 
@@ -480,24 +466,17 @@ export const menuItems = {
     },
     { 
       id: 66, 
-      name: 'Zola', 
-      description: 'Mozzarella, Gorgonzola e Zucchine', 
+      name: 'Golosa', 
+      description: 'Mozzarella, Guanciale, Pecorino, Miele, Rosmarino', 
       price: '8,40', 
       allergens: ['G', 'L'] 
     },
     { 
       id: 67, 
       name: 'Suprema', 
-      description: 'Mozzarella, Guanciale, Pecorino, Miele, Rosmarino', 
+      description: 'Pomodoro, Bufala in cottura, Alici, Pomodori Secchi', 
       price: '8,90', 
       allergens: ['G', 'L'] 
-    },
-    { 
-      id: 68, 
-      name: 'Pugliese', 
-      description: 'Mozzarella, Bufala in cottura, Alici, Pomodori Secchi', 
-      price: '8,90', 
-      allergens: ['G', 'L', 'P'] 
     },
     { 
       id: 69, 
@@ -516,7 +495,7 @@ export const menuItems = {
     { 
       id: 71, 
       name: 'Deliziosa', 
-      description: 'Pomo, Funghi Misti, Guanciale, \'Nduja di Spilinga', 
+      description: 'Pomodoro, Funghi Misti, Guanciale, \'Nduja di Spilinga', 
       price: '8,90', 
       allergens: ['G'] 
     },
@@ -539,7 +518,7 @@ export const menuItems = {
     { 
       id: 74, 
       name: 'Insalata di Pollo', 
-      description: 'Insalata, Pollo, Lattuga e Maionese', 
+      description: 'Focaccia, Pollo, Lattuga e Maionese', 
       price: '7,30', 
       allergens: ['G', 'U'] 
     },
@@ -552,7 +531,7 @@ export const menuItems = {
     },
     { 
       id: 76, 
-      name: 'Insalata del Giardiniere', 
+      name: 'Insalata di Gamberi', 
       description: 'Pomodoro, Lattuga, Gamberetti e Salsa Rosa', 
       price: '8,20', 
       allergens: ['G', 'C', 'U'] 
@@ -610,7 +589,7 @@ export const menuItems = {
     },
     { 
       id: 84, 
-      name: 'Calzone ai Gamberetti', 
+      name: 'Calzone al Guanciale', 
       description: 'Mozzarella, Stracchino e Guanciale', 
       price: '6,80', 
       allergens: ['G', 'L'] 
@@ -623,7 +602,7 @@ export const menuItems = {
       allergens: ['G', 'L'] 
     }
   ],
-  'bruschette': [
+  'bruscotte': [
     { 
       id: 86, 
       name: 'Bruscotta con Pomodoro a Fette', 
@@ -835,7 +814,7 @@ export const menuItems = {
     },
     { 
       id: 115, 
-      name: 'Tiramisù Special', 
+      name: 'Tiramisù Special: Mirtilli / Ribes / Amarena / Lampone', 
       description: 'Nostra produzione con Uova, Mascarpone, Frutti Rossi', 
       price: '5,10', 
       allergens: ['G', 'L', 'U'] 
